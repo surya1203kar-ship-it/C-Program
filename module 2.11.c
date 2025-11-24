@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int arr[5]={12,23,35,47,59};
+    int n=5;
+    int key,i,found=0;
+    printf("enter element to search:");
+    scanf("%d",&key);
+    for(i=0;i<n;i++){
+        if(arr[i]==key){
+            printf("element %d found at %d.\n",key,i+i);
+            found=1;
+            break;
+        }
+    }
+    if(!found)
+        printf("element not found\n");
+            return 0;
+}
