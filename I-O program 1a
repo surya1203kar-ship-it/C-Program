@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+FILE*fp;
+fp=fopen("data.txt","w");//Oepns file for writing
+
+if(fp==NULL){
+    printf("File cannot be opened!\n");
+    return 1;
+}
+fprintf(fp,"welcome to file handling in C\n");
+fprintf(fp,"thise text is written to the file.\n");
+fclose(fp);
+printf("data written successfully.\n");
+return 0;
+}
